@@ -128,13 +128,12 @@ void inorder(const Node* root) {
 //     postorder(NULL);   // tidak mencetak apa pun
 // =============================================================================
 void postorder(const Node* root) {
-     if (root == nullptr)
-    {
+      if (root == nullptr) {
         return;
     }
     postorder(root->left);
     postorder(root->right);
-    cout << root->data << "";
+    cout << root->data << " ";
 }
 
 // =============================================================================
