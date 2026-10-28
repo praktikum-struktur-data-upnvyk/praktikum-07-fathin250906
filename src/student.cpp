@@ -160,6 +160,9 @@ void postorder(const Node* root) {
 //     clear(root);              // aman, tidak terjadi apa-apa
 // =============================================================================
 void clear(Node*& root) {
+   if (root == nullptr) {
+        return;
+    }
     clear(root->left);
     clear(root->right);
     delete root;
